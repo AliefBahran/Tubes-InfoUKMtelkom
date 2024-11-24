@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="SelamatDatang.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="doodle.jpg" alt="Doodle" class="doodle-image">
+        </div>
+        <div class="right-section" action="landingpage.html" method="post">
+            <h2>Selamat datang</h2>
+            <h3 id="username">Nama Pengguna</h3>
+            <form class="login-form" action="Beranda.html" method="get">
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Login</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Ambil data dari localStorage dan tampilkan
+        document.getElementById('username').textContent = localStorage.getItem('username');
+        document.getElementById('password').value = localStorage.getItem('password');
+        document.getElementById('nim').value = localStorage.getItem('nim');
+        document.getElementById('email').value = localStorage.getItem('email');
+    </script>
+</body>
+</html>

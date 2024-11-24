@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #d9a2a1;
+}
+
+.container {
+    display: flex;
+    width: 850px;
+    height: 600px;
+    background-color: #a94c4c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 80%;
+    height: auto;
+}
+
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.code-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.code-inputs input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.verify-button {
+    background-color: white;
+    color: #c34c4c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.verify-button:hover {
+    background-color: #ddd;
+}
+
+.resend-link {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}

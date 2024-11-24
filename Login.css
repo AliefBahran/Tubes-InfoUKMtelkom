@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d9a2a1;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doodle-image {
+    width: 80%;
+    height: auto;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #a94c4c;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.login-form {
+    width: 100%;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #a94c4c;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.create-account {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+}

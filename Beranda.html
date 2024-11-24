@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <!-- Link ke Font Awesome untuk ikon profesional -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Beranda.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#"><i class="icon fas fa-home"></i></a>
+        <a href="#"><i class="icon fas fa-bell"></i></a>
+        <a href="Pencarian.html"><i class="icon fas fa-search"></i></a>
+        <a href="#"><i class="icon fas fa-user"></i></a>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-wrapper">
+        <!-- New Post Section -->
+        <div class="new-post">
+            <h4><a href="DaftarUkm.html">“Register for student activity clubs ?”</a></h4>
+            <h2 class="text-xl font-bold">New Post</h2>
+            <a class="text-sm text-gray-500" href="#">See more</a>
+        </div>
+
+        <!-- Planner, Events, and UKM Wrapper -->
+        <div class="planner-ukm-wrapper">
+            <!-- Planner Section -->
+            <div class="planner">
+                <h3>Planner</h3>
+                <div id="novemberCalendar"></div>
+                <div id="eventListPanel">
+                    <h2>Activities </h2>
+                    <ul id="eventList"></ul>
+                </div>
+            </div>
+
+            <!-- Live Events Section -->
+            <div class="events-section-container mt-4">
+                <div class="header">
+                    <h2 class="text-xl font-bold">Live Events</h2>
+                    <a class="text-sm text-gray-500" href="#">See more</a>
+                </div>
+
+                <!-- Events Container -->
+                <div class="events-container">
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 1</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 2</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 3</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 4</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <!-- Additional events can be added as needed -->
+                </div>
+            </div>
+
+            <!-- New Events Section -->
+            <div class="events-section-container mt-4">
+                <div class="header">
+                    <h2 class="text-xl font-bold">New Events</h2>
+                    <a class="text-sm text-gray-500" href="#">See more</a>
+                </div>
+
+                <!-- Events Container -->
+                <div class="events-container">
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 1</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 2</p>
+                        <p><strong>Date:</strong> 15 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 3</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <div class="events live-events">
+                        <img src="doodle.jpg" alt="Event Image">
+                        <p><strong>Title:</strong> Event Title 4</p>
+                        <p><strong>Date:</strong> 16 November, 2024</p>
+                        <p><strong>Location:</strong> Event Location</p>
+                        <p><strong>Description:</strong> This is a description of the live event.</p>
+                    </div>
+                    <!-- Additional events can be added as needed -->
+                </div>
+            </div>
+
+            <!-- Modal Popup Kalender Tahun -->
+            <div id="fullCalendarModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Kalender 2024</h2>
+                    <div id="fullCalendar"></div>
+                </div>
+            </div>
+
+            <script src="Beranda.js"></script>
+</body>
+
+</html>

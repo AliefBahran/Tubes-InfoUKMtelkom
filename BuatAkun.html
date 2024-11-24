@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Akun</title>
+    <link rel="stylesheet" href="BuatAkun.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="doodle.jpg" alt="Doodle" class="doodle-image">
+        </div>
+        <div class="right-section">
+            <!-- Form akan mengirim data ke save_account.php menggunakan metode POST -->
+            <form class="account-form" id="accountForm" method="POST" action="save_account.php">
+                <h2>Buat Akun</h2>
+
+                <label for="username">Nama Lengkap</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" name="nim" required>
+
+                <label for="fakultas">Fakultas</label>
+                <input type="text" id="fakultas" name="fakultas" required>
+
+                <label for="jurusan">Jurusan</label>
+                <input type="text" id="jurusan" name="jurusan" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nohp">No Telpon</label>
+                <input type="text" id="nohp" name="nohp" required>
+
+                <label for="password">Buat Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="verify-button">Verifikasi</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

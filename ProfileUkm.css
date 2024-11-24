@@ -1,0 +1,144 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body dan font default */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #d84848;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+
+/* UKM Info Section */
+.ukm-info {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.ukm-info .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.ukm-info .col {
+    width: 30%;
+}
+
+.ukm-info h2 {
+    font-size: 24px;
+    color: #d84848;
+    margin-bottom: 10px;
+}
+
+.ukm-info p, .ukm-info ul {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.ukm-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.ukm-photo {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.ukm-photo .ukm-photo-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Formulir Pendaftaran */
+.formulir-pendaftaran {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.formulir-pendaftaran .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.formulir-pendaftaran h2 {
+    font-size: 28px;
+    color: #d84848;
+    margin-bottom: 20px;
+}
+
+.formulir-pendaftaran label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.formulir-pendaftaran input, .formulir-pendaftaran textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulir-pendaftaran button {
+    background-color: #d84848;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.formulir-pendaftaran button:hover {
+    background-color: #d84848;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 14px;
+}

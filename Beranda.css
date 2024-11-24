@@ -1,0 +1,359 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 80px; /* Lebar sidebar lebih sempit */
+    background-color: #d84848; /* Warna latar belakang yang lebih elegan */
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    transition: all 0.3s ease-in-out; /* Efek transisi untuk perubahan lebar atau warna */
+}
+.sidebar button {
+    all: unset; /* Hapus semua gaya bawaan tombol */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Ukuran tombol (sesuaikan sesuai kebutuhan) */
+    height: 40px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    font-size: 1.5rem; /* Ukuran font lebih besar untuk ikon */
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Menambahkan transformasi */
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    color: #ffeb3b; /* Warna teks saat hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Background yang lebih halus */
+    transform: translateX(5px); /* Menggeser sedikit ke kanan agar terasa lebih dinamis */
+}
+
+.icon {
+    font-size: 1.6rem; /* Ukuran font yang lebih besar agar ikon terlihat jelas */
+    margin-bottom: 5px;
+}
+
+/* Main Content */
+.main-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* New Post */
+.new-post {
+    width: 750px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Memberikan jarak atas */
+}
+
+/* Styling for Post Card */
+.post-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.post-card .post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.post-card .post-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.post-card .btn-explore {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5252;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.post-card .btn-explore:hover {
+    background-color: #e04848;
+}
+
+
+/* Live Events Section Styling */
+.events-section-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    font-size: 1.5rem; /* Equivalent to text-xl */
+    font-weight: bold;
+    margin: 0;
+}
+
+.header a {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: #6B7280; /* gray-500 */
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Events Container Styling (2 columns grid) */
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Adds spacing between the events */
+}
+
+/* Individual Event Styling */
+.events {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi */
+}
+
+.events:hover {
+    transform: translateY(-8px); /* Mengangkat card sedikit saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Menambah bayangan yang lebih lembut saat hover */
+}
+
+.events h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.events img {
+    width: 250px; /* Set image width to 250px */
+    height: 250px; /* Set image height to 250px */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.events p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive design for smaller screens (1 column on mobile) */
+@media (max-width: 768px) {
+    .events-container {
+        grid-template-columns: 1fr; /* Stacks the events into 1 column on small screens */
+    }
+}
+
+/* Planner Section */
+.planner {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+    margin-top: 10px; /* Memberikan jarak atas */
+}
+
+/* Planner Header */
+.planner h3 {
+    font-size: 1.5rem; /* Equivalent to text-xl */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Calendar Container */
+#novemberCalendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk menampilkan 3 bulan dalam satu baris */
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 80vh; /* Mengatur tinggi maksimal untuk pop-up kalender */
+    overflow-y: auto; /* Memungkinkan scroll vertikal pada kalender */
+    position: relative; /* Memberikan posisi relatif agar tombol sticky bekerja dengan baik */
+}
+
+/* Tombol "Back" yang sticky */
+.back-button {
+    position: sticky;
+    top: 20px; /* Jarak dari atas ketika sticky */
+    z-index: 10; /* Menjaga tombol tetap berada di atas elemen lainnya */
+    background-color: #d84848;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Memberikan jarak bawah antara tombol dan kalender */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+}
+
+.back-button:hover {
+    background-color: #e74c3c; /* Warna saat hover */
+    transform: scale(1.05); /* Membesarkan tombol saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Menambah bayangan pada tombol */
+}
+
+/* Menyusun Header Bulan */
+.month-header {
+    background-color: #d84848;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Menyusun body dari Kalender */
+.month-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 kolom untuk hari dalam seminggu */
+    padding: 10px;
+}
+
+/* Hari dalam kalender */
+.day {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Transisi untuk latar belakang dan transformasi */
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #f9f9f9; /* Warna latar belakang lebih halus saat hover */
+    transform: scale(1.05); /* Efek sedikit membesar saat hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk hari saat hover */
+}
+
+.day.has-event {
+    background-color: #ffeb3b;
+}
+
+.day.has-event:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Bayangan lebih lembut */
+}
+
+/* Event List Panel */
+#eventListPanel {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    max-height: 80vh; /* Batasi tinggi modal */
+    overflow-y: auto; /* Memungkinkan scroll pada modal */
+}
+
+.modal-content:hover {
+    transform: scale(1.02); /* Efek pembesaran halus pada modal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Menambah bayangan saat hover pada modal */
+}
+
+/* Menutup modal */
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #e74c3c; /* Merah saat hover */
+    cursor: pointer;
+    transform: scale(1.2); /* Membesarkan tombol tutup sedikit */
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column; /* Elemen-elemen ditumpuk dalam 1 kolom pada layar kecil */
+    }
+
+    .planner {
+        max-width: 100%; /* Full width untuk planner pada layar kecil */
+        margin-top: 0;
+    }
+
+    #novemberCalendar {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk kalender pada layar kecil */
+    }
+}
